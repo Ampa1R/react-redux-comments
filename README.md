@@ -1,3 +1,13 @@
-# comments app on React
+# Комментарии на React
 
-only for testing
+Простой пример комментариев на React с использованием LocalStorage
+
+Запуск сборки:
+```
+npm run build
+```
+
+Запуск webpack-dev-server с HMR:
+```
+npm start
+```

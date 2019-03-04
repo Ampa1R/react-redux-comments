@@ -7,13 +7,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      comments: [
-        // {id: 4, created: '13:46 30.02.2020', author: 'Vasiliy 4', text: 'Обычный комментарий'},
-        // {id: 3, created: '13:45 30.02.2020', author: 'Vasiliy 3', text: 'Обычный комментарий'},
-        // {id: 2, created: '13:44 30.02.2020', author: 'Vasiliy 2', text: 'Обычный комментарий'},
-        // {id: 1, created: '13:43 30.02.2020', author: 'Vasiliy 1', text: 'Обычный комментарий'},
-        // {id: 0, created: '13:42 30.02.2020', author: 'Vasiliy 0', text: 'Обычный комментарий'},
-      ],
+      comments: [],
       commentAuthor: '',
       commentValue: '',
       error: ''
