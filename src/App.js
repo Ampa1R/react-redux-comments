@@ -34,9 +34,16 @@ class App extends Component {
     }
     const d = new Date();
     const newID = (this.state.comments[0]) ? this.state.comments[0].id + 1 : 0;
+    
+    const hour = d.getHours().toString().padStart(2, 0);
+    const minute = d.getMinutes().toString().padStart(2, 0);
+    const day = d.getDay().toString().padStart(2, 0);
+    const month = d.getMonth().toString().padStart(2, 0);
+    const year = d.getFullYear();
+
     const newComment = {
       id: newID,
-      created: `${d.getHours()}:${d.getMinutes()} ${d.getDay()}.${d.getMonth()}.${d.getFullYear()}`,
+      created: `${hour}:${minute} ${day}.${month}.${year}`,
       author: this.state.commentAuthor,
       text: this.state.commentValue
     }
