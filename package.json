@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "build-dev": "webpack --mode=development",
-    "start": "npm run build && node server",
+    "start": "node server",
     "dev": "webpack-dev-server --port 3000 --host 0.0.0.0 --hot"
   },
   "author": "",
