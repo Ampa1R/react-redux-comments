@@ -34,7 +34,7 @@ class App extends Component {
     }
     const d = new Date();
     const newID = (this.state.comments[0]) ? this.state.comments[0].id + 1 : 0;
-    
+
     const hour = d.getHours().toString().padStart(2, 0);
     const minute = d.getMinutes().toString().padStart(2, 0);
     const day = d.getDay().toString().padStart(2, 0);
@@ -64,7 +64,7 @@ class App extends Component {
         if(item.id === itemId) return false;
         else return true;
       })
-    })
+    }, () => localStorage.setItem('comments', JSON.stringify(this.state.comments)))
   }
   render() {
     return (
