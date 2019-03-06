@@ -22,6 +22,9 @@ class App extends Component {
     this.setState({commentAuthor: e.target.value});
   }
   commentValueChangeHandler = e => {
+    const lastChar = e.target.value.charAt(e.target.value.length - 1);
+    if(lastChar === '<' || lastChar === '>')
+      return;
     this.setState({commentValue: e.target.value});
   }
   commentCreateHandler = () => {
