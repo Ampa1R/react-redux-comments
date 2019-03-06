@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "dev": "webpack --mode=development",
-    "start": "webpack-dev-server --port 3000 --host 0.0.0.0 --hot"
+    "build-dev": "webpack --mode=development",
+    "start": "node server",
+    "dev": "webpack-dev-server --port 3000 --host 0.0.0.0 --hot"
   },
   "author": "",
   "license": "ISC",

@@ -2,6 +2,11 @@
 
 Простой пример комментариев на React с использованием LocalStorage
 
+Деплой
+```
+npm start
+```
+
 Запуск сборки:
 ```
 npm run build
@@ -9,5 +14,5 @@ npm run build
 
 Запуск webpack-dev-server с HMR:
 ```
-npm start
+npm run dev
 ```
