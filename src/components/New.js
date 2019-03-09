@@ -8,14 +8,14 @@ function New (props) {
         className="New__Author"
         type="text"
         value={props.commentAuthor}
-        onChange={props.onCommentAuthorChange}
+        onChange={e => props.onAuthorChange(e.target.value)}
         placeholder="Имя автора"
       />
       <button className="New__Button" onClick={props.onCommentCreate}>Добавить комментарий</button>
       <textarea
         className="New__Text"
         value={props.newCommentValue}
-        onChange={props.onCommentValueChange}
+        onChange={e => props.onCommentValueChange(e.target.value)}
         placeholder="Текст комментария"
       />
     </div>
